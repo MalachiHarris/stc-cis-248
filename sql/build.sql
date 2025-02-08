@@ -17,7 +17,7 @@ CREATE TABLE TeamMembers (
     isExternal BOOLEAN NOT NULL,
     maxWeeklyHours DOUBLE,
     maxWeeklyDays TINYINT,
-    username VARCHAR(100),
+    username VARCHAR(100) UNQIUE,
     password VARCHAR(500),
     isAdmin BOOLEAN NOT NULL
 );
